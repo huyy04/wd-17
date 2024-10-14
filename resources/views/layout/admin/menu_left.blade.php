@@ -119,23 +119,13 @@
                         </a>
                         <ul class="sub-menu">
                             <li class="sub-menu-item">
-                                <a href="all-user.html" class="">
+                                <a href="{{route('user.list')}}" class="">
                                     <div class="text">All user</div>
                                 </a>
                             </li>
                             <li class="sub-menu-item">
-                                <a href="add-new-user.html" class="">
+                                <a href="{{route('user.create')}}" class="">
                                     <div class="text">Add new user</div>
-                                </a>
-                            </li>
-                            <li class="sub-menu-item">
-                                <a href="login.html" class="">
-                                    <div class="text">Login</div>
-                                </a>
-                            </li>
-                            <li class="sub-menu-item">
-                                <a href="sign-up.html" class="">
-                                    <div class="text">Sign up</div>
                                 </a>
                             </li>
                         </ul>
