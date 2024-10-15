@@ -110,7 +110,7 @@
                     <div class="divider"></div>
                     <div class="flex items-center justify-between flex-wrap gap10">
                         <div class="text-tiny">Showing 10 entries</div>
-                        <ul class="wg-pagination">
+                        <ul class="pagination">
                             {{ $User->links() }}
                         </ul>
                     </div>
