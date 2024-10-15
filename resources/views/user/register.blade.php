@@ -18,6 +18,7 @@
                         <div class="col"><input class="form-field" type="email" name="email" placeholder="Email" required></div>
                         <div class="col"><input class="form-field" type="text" name="name" placeholder="Name" required></div>
                         <div class="col"><input class="form-field" type="password" name="password" placeholder="Password" required></div>
+                        <div class="col"><input class="form-field" type="text" name="phone" placeholder="Phone" required></div>
                         <div class="col"><input class="btn w-100" type="submit" value="Register"></div>
                         <div class="col">
                         </div>

@@ -30,22 +30,23 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8',
-        ]);
-    
+//        $request->validate([
+////            'name' => 'required|string|max:255',
+////            'email' => 'required|string|email|max:255|unique:users',
+////            'password' => 'required|string|min:8',
+////            'phone' => 'required|string|max:255',
+//        ]);
+
         User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-             
+             'phone' => $request->phone,
         ]);
-    
+
         return redirect()->route('user.login')->with('success', 'Registration successful. Please log in.');
     }
-    
+
 
     /**
      * Display the specified resource.
